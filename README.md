@@ -106,7 +106,7 @@ A flagged entry is a prompt to investigate, not proof of fraud or an error. The 
 ## Technology and project structure
 
 ```text
-earnwise-eva/
+earnwise/
 |-- index.html                  Dashboard and dialogs
 |-- styles.css                  Responsive styling
 |-- core.js                     EVA calculations, CSV validation, AI model
@@ -126,17 +126,6 @@ Charts are rendered with SVG. Excel import uses bundled **SheetJS Community Edit
 
 SheetJS is provided under the Apache License 2.0; its notice is in [vendor/SheetJS-LICENSE.txt](vendor/SheetJS-LICENSE.txt). This notice applies to that dependency and does not grant a license to the entire project.
 
-## Deploy on Vercel
-
-1. Create a GitHub repository named `earnwise-eva` and upload the files in the structure above, preserving `vendor/`.
-2. In Vercel, select **Add New > Project**, connect GitHub, and import the repository.
-3. Use **Other** for Framework Preset, repository root (`./`) for Root Directory, an empty Build Command, and `.` for Output Directory. No environment variables are needed.
-4. Click **Deploy**, then test the dashboard and an Excel import at the returned URL.
-
-The included `vercel.json` sets the framework to Other, skips installation/build, and serves the root directory. No `package.json` is required. Future pushes to the connected production branch trigger new deployments.
-
-Official references: [Vercel build settings](https://vercel.com/docs/builds/configure-a-build), [Git deployments](https://vercel.com/docs/git), and [deployment exclusions](https://vercel.com/docs/deployments/vercel-ignore).
-
 ## Data storage and limitations
 
 - Project data is processed and saved in the current browser; there is no project upload API, account system, or shared cloud database.
@@ -144,9 +133,3 @@ Official references: [Vercel build settings](https://vercel.com/docs/builds/conf
 - Clearing browser storage can remove saved work. Export important data, and avoid leaving sensitive projects or downloaded reports on shared devices.
 - A person controlling the browser can change saved data. This app does not provide authoritative financial records, approval workflows, or audit trails.
 - Input validation, output escaping, and CSV formula neutralization are included. These controls do not replace authentication, server-side authorization, or a deployment security review if the app is extended into a shared system.
-
-## Files kept out of this repository
-
-The `.gitignore` allowlist includes only the application, deployment configuration, documentation, sample data, and dependency notices. Assignment reports, screenshots, test evidence, local test runners, browser profiles, and other local files remain outside the repository unless deliberately added later.
-
-The `.vercelignore` allowlist also limits deployment files. If you add a new runtime asset, explicitly allow it in both files so it is included when committing and deploying.
