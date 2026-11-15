@@ -1,0 +1,7 @@
+name,category,budget,actual,planned,complete
+Discovery & planning,Planning,45000,40000,100,100
+UI/UX design,Design,75000,68000,100,100
+Frontend development,Development,140000,126000,90,80
+Backend development,Development,160000,153000,85,75
+Quality assurance,Testing,65000,22000,45,35
+Deployment & hosting,Infrastructure,35000,9000,30,20

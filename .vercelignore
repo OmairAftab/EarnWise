@@ -1,0 +1,13 @@
+# Deploy only the static application and dependency notices.
+/*
+!/index.html
+!/styles.css
+!/core.js
+!/app.js
+!/vercel.json
+!/sample-data.csv
+!/vendor/
+/vendor/*
+!/vendor/xlsx.full.min.js
+!/vendor/SheetJS-LICENSE.txt
+!/vendor/SOURCE.txt

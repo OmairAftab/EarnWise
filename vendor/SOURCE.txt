@@ -1,0 +1,4 @@
+SheetJS CE 0.20.3
+Downloaded from https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js?download=1
+Apache License 2.0
+Upstream: https://sheetjs.com/

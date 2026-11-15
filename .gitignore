@@ -1,0 +1,17 @@
+# Minimal GitHub repository: ignore everything unless explicitly allowed.
+# Add future application assets to this allowlist before committing them.
+/*
+!/.gitignore
+!/.vercelignore
+!/README.md
+!/index.html
+!/styles.css
+!/core.js
+!/app.js
+!/vercel.json
+!/sample-data.csv
+!/vendor/
+/vendor/*
+!/vendor/xlsx.full.min.js
+!/vendor/SheetJS-LICENSE.txt
+!/vendor/SOURCE.txt
